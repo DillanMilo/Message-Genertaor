@@ -6,12 +6,23 @@ function getRandomArray (array) {
     return Math.floor(Math.random() * array.length);
 };
 
+function getAsciiArt() {
+    return `
+   _   _      _ _
+  | | | | ___| | | ___
+  | |_| |/ _ \\ | |/ _ \\
+  |  _  |  __/ | | (_) |
+  |_| |_|\\___|_|_|\\___/
+    `;
+}
+
 function generateMessage() {
+    const asciiArt = getAsciiArt();
     const greeting = greetings[getRandomArray(greetings)];
     const subject = subjects[getRandomArray(subjects)];
     const action = actions[getRandomArray(actions)];
 
-    return `${greeting} ${subject}, ${action}`;
+    return `${asciiArt}${greeting} ${subject}, ${action}`;
 }
 
 console.log(generateMessage());
