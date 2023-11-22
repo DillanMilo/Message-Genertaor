@@ -6,7 +6,6 @@ A simple JavaScript program that generates random messages by combining differen
 
 - [Features](#features)
 - [Usage](#usage)
-- [Getting Started](#getting-started)
 
 ## Features
 
